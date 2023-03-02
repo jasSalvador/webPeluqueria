@@ -1,0 +1,463 @@
+<!--PAGINA SECUNDARIA PELUQUERIA-->
+<!DOCTYPE html>
+<html lang="es">
+<Head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jasmin Salvador">
+    <meta name="description" content="Sitio web peluqueria">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">    
+    <title>Fernanda Salvador Peluqueria</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo_transparente.png">
+    <!--bootstrap-->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--iconos bootstrap-->  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!--css-->  
+    <link rel="stylesheet" href="css/style.css">
+    <!--tipografia-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+</Head>
+<body>
+    <!-- menu nav -->        
+    <nav class="navbar navbar-expand-md p-2 w-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-center justify-content-between px-5" id="menu">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo_transparente.png" width="130" alt="Logo peluqueria">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://jassalvador.github.io/webPeluqueria/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios-actuales-descripcion">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/5493489680614" target="_blank">Agendar Turno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--contenedor gral-->
+    <div class="container-gral">
+
+        <!--header-->
+        <section>
+            <h1 class="titulo-servicios text-center mt-5 p-3">Nuestros servicios</h1>
+            <div class="banner-pelu py-4">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="col-12 col-md-6" >
+                        <img src="images/banner-pelu.jfif" class="d-block w-100" alt="Banner servicios peluqueria">
+                    </div>
+                                
+                    <div class="col-12 col-md-6" >
+                        <img src="images/banner-pelu-2.png" class="d-block w-100" alt="Banner servicios peluqueria">
+                    </div> 
+                </div>
+            </div>
+            <div>
+                <p class="texto-banner lead text-center my-3 mx-auto">En Fernanda Salvador Peluquería, magia y belleza se unen para sorprenderte y lograr que 
+                    tu cabello sea el protagonista, somos expertos en colorimetría, por lo que contamos con un servicio y asesoría de calidad 
+                    en esta materia, siempre acompañada de productos profesionales, tratamientos capilares y otras especialidades para conseguir 
+                    un cabello saludable, sedoso y brillante.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Servicios peluqueria -->
+        <section id="servicios-actuales-desc" class="servicios-actuales-desc d-flex flex-column mx-auto"> 
+            <!--galeria servicios-->
+            <div id="servicios-actuales-descripcion" class="text-center py-3">
+                <div class="row">
+                    <!-- COLORIMETRIA -->
+                    <div class="servicios">
+                        <h4 class="text-start text-black mt-4">COLORIMETRÍA</h4>
+                        <hr class="mb-5">
+                    </div>    
+                    <!--Servicio 1 babylights --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/baby.png" class="d-block w-100"  alt="Babylights">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-1" class="btn text-white w-100" data-bs-toggle="collapse">Babylights</a>
+                                <div class="collapse" id="texto-1">
+                                    <br>
+                                    <div class="well py-1">
+                                        <p>Esta técnica simula reflejos naturales con mechas que van
+                                        <br>
+                                        desde la raiz a la punta del cabello, siendo recomendada
+                                        <br>
+                                        especialmente para cabellos rubios o con canas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Servicio 2 balayage--> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/balag.png" class="d-block w-100" alt="Balayage">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-2" class="btn text-white w-100" data-bs-toggle="collapse">Balayage</a>
+                                <div class="collapse" id="texto-2">
+                                    <br>
+                                    <div class="well">
+                                        <p>Consiste en realizar un barrido de medios a 
+                                        <br>
+                                        puntas, sin tocar la raiz, logrando un cabello de aspecto
+                                        <br>
+                                        muy natural y ligeramente mas claro en las puntas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Servicio 3 color --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/color.png" class="d-block w-100" alt="Color">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-3" class="btn text-white w-100" data-bs-toggle="collapse">Color</a>
+                                <div class="collapse" id="texto-3">
+                                    <br>
+                                    <div class="well">
+                                        <p>Consiste en dar un retoque a la raíz con crecimiento y de 
+                                        <br>
+                                        ser necesario, se realiza una emulsión en todo el cabello,
+                                        <br>
+                                        lo que también es ideal para cubrir canas. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Servicio 4 contouring --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5 ">
+                            <div>
+                                <img src="images/contouring.png" class="d-block w-100" alt="Contouring">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-4" class="btn text-white w-100" data-bs-toggle="collapse">Contouring</a>
+                                <div class="collapse" id="texto-4">
+                                    <br>
+                                    <div class="well">
+                                        <p>Esta técnica consigue iluminar y darle vida a tu pelo
+                                        <br>
+                                        sin cambiar tu color de base, no necesita mantenimiento,
+                                        <br>
+                                        por lo que es ideal para cabellos oscuros.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TRATAMIENTOS CAPILARES-->
+                    <div class="servicios">
+                        <h4 class="text-start text-black mt-4">TRATAMIENTOS CAPILARES</h4>
+                        <hr class="mb-5">
+                    </div>
+                    <!--Servicio 5 botox--> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/botox.png" class="d-block w-100" alt="Botox">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-5" class="btn text-white w-100" data-bs-toggle="collapse">Botox</a>
+                                <div class="collapse" id="texto-5">
+                                    <br>
+                                    <div class="well">
+                                        <p>Con este tratamiento conseguís los mismos efectos  
+                                        <br>
+                                        reparadores de la keratina, a diferencia que no 
+                                        <br>
+                                        alisa, ni cambia la forma del cabello.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Servicio 6 keratina--> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5 ">
+                            <div>
+                                <img src="images/keratina.png" class="d-block w-100" alt="Keratina">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-6" class="btn text-white w-100" data-bs-toggle="collapse">Keratina</a>
+                                <div class="collapse" id="texto-6">
+                                    <br>
+                                    <div class="well">
+                                        <p>Tratamiento ultra reparador que ayuda a reparar, nutrir,
+                                        <br>
+                                        dar brillo y suavisar cabellos dañados por decoloraciones
+                                        <br>
+                                        y debilitados por secador y planchita.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Servicio 7 oro liquido --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5 ">
+                            <div>
+                                <img src="images/oro-liq.png" class="d-block w-100" alt="Oro liquido">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-7" class="btn text-white w-100" data-bs-toggle="collapse">Oro liquido</a>
+                                <div class="collapse" id="texto-7">
+                                    <br>
+                                    <div class="well">
+                                        <p>Tratamiento rico en vitaminas y apto para todo tipo de
+                                        <br>
+                                        cabellos, ya que es más suave que el botox y la karatina,
+                                        <br>
+                                        pero logrando los mismos resultados. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--Servicio 8 m curly --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/curly.png" class="d-block w-100" alt="Metodo Curly">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-8" class="btn text-white w-100" data-bs-toggle="collapse">Metodo Curly</a>
+                                <div class="collapse" id="texto-8">
+                                    <br>
+                                    <div class="well">
+                                        <p>Es una técnica basada en aportar y mantener un alto nivel de
+                                        <br>
+                                        hidratación, para una máxima definición
+                                        <br>
+                                        en cabellos ondulados y rizados.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OTROS SERVICIOS -->
+                    <div class="servicios">
+                        <h4 class="text-start text-black mt-4">MAS SERVICIOS</h4>
+                        <hr class="border-2 mb-5">
+                    </div>
+            
+                    <!--Servicio 13 Alisados --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/alisados.png" class="d-block w-100" alt="Alisados">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-13" class="btn text-white w-100 " data-bs-toggle="collapse">Alisados</a>
+                                <div class="collapse" id="texto-13">
+                                    <br>
+                                    <div class="well">
+                                        <p>Biomolecular, Suave/Fuerte, Plastificado o Sin Formol,
+                                        <br>
+                                        todas son técnicas de alisado que ayudan a disminuir
+                                        <br>
+                                        el volumen y eliminar el frizz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Servicio 14 cortes --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/cortes.png" class="d-block w-100" alt="Cortes de cabello">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-14" class="btn text-white w-100" data-bs-toggle="collapse">Cortes</a>
+                                <div class="collapse" id="texto-14">
+                                    <br>
+                                    <div class="well">
+                                        <p>Las ultimas tendencias en cabello corto, mediano o largo, 
+                                        <br>
+                                        privilegiando el corte más favorecedor según tus
+                                        <br>
+                                        facciones y la forma de tu rostro.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Servicio 15 lifting --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-5">
+                            <div>
+                                <img src="images/lifting.jpeg" class="d-block w-100" alt="Lifting de pestañas">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-15" class="btn text-white w-100" data-bs-toggle="collapse">Lifting</a>
+                                <div class="collapse" id="texto-15">
+                                    <br>
+                                    <div class="well">
+                                        <p>El lifting de pestañas resalta, eleva y maximiza la curva
+                                        <br>
+                                        natural de tus pestañas, aportando volumen y sin necesidad
+                                        <br>
+                                        de retoques.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Servicio 16 manicure --> 
+                    <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                        <div class="servicio-descripcion border border-dark border-1 mb-4">
+                            <div>
+                                <img src="images/manicure.png" class="d-block w-100" alt="Manicure">
+                            </div>
+                            <div class="texto-descripcion bg-black text-white p-2">
+                                <a href="#texto-16" class="btn text-white w-100" data-bs-toggle="collapse">Manicure</a>
+                                <div class="collapse" id="texto-16">
+                                    <br>
+                                    <div class="well">
+                                        <p>Manicure profesional para complementar tu look, con una
+                                            <br>
+                                            infinidad de tonalidades, texturas, brillos y piedresillas
+                                            <br>
+                                            para un estilo unico y original.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!--Boton-->
+            <div class="boton">
+                <a href="https://wa.me/5493489680614" target="_blank" rel="noopener noreferrer ">
+                    <button type="button" class="btn btn-dark ">
+                        Agendá tu Turno
+                        <i class="bi bi-whatsapp"></i>
+                    </button>
+                </a>
+            </div>    
+            <p class="text-center mb-5">PODÉS AGENDAR DIRECTO A NUESTRO WHATSAPP, CONSULTAR PRECIOS O RESOLVER TUS DUDAS.
+                <br>
+                <br>
+                ATENDEMOS DE MARTES A SABADO DE 10 A 12 Y DE 16 A 19 HRS.
+                <br>
+                <br>
+                Castilla #314 Campana.
+            </p>
+        </section>
+                
+        
+    </div><!--fin container gris-->
+
+
+        <!--siguenos-->
+        <section class="siguenos pt-4 mt-5 bg-black">
+            <div class="container">
+                <div class="container siguenos-ig d-flex justify-content-evenly align-items-center bg-secondary">
+                    <div class=" align-items-center mx-auto">
+                        <a href="https://www.instagram.com/fernandasalvadorpeluqueria/" target="_blank" rel="noopener noreferrer">
+                            <h5 class="lead text-center">
+                                También podés seguirnos en Instagram y enterarte de todas nuestras promos y novedades antes que nadie!
+                            </h5>
+                        </a>
+                    </div>
+                    <div class="text-center align-items-center mx-auto px-1">
+                        <a href="https://www.instagram.com/fernandasalvadorpeluqueria/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/instagram-icon.png" class="d-block" width="60" alt="logo instagram">
+                        </a>
+                    </div>
+                </div>              
+            </div>
+        </section>
+
+
+        <!-- Pie de pagina / footer-->
+        <section>
+            <footer id="footer" class="footer footer-expand-md d-flex flex-column align-items-center justify-content-center bg-black text-white pb-5">
+                <img class="footer-logo d-block" src="images/logo-negro.jpg" width="70px"  alt="Logo de peluqueria">
+                <p class="footer-texto text-center">Fernanda Salvador Peluqueria</p>
+                                        
+                <!-- Iconos redes sociales -->
+                <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+                                            
+                    <a href="https://wa.me/5493489680614" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+        
+                    <a href="https://www.instagram.com/fernandasalvadorpeluqueria/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+        
+                    <a href="mailto:fernanda-cs@live.cl" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Int.+Castilla+314,+Campana,+Provincia+de+Buenos+Aires,+Argentina/@-34.1622575,-58.9723315,15z/data=!4m13!1m7!3m6!1s0x95bb723581e8712b:0x5301f210738c01a3!2sInt.+Castilla+314,+Campana,+Provincia+de+Buenos+Aires,+Argentina!3b1!8m2!3d-34.1622575!4d-58.9635768!3m4!1s0x95bb723581e8712b:0x5301f210738c01a3!8m2!3d-34.1622575!4d-58.9635768" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-geo-alt"></i>
+                    </a>                           
+                </div>
+                            
+                <div class="small derechos-de-autor text-center text-white-50 p-3 mt-5 ">&#169; 2023 | Todos los derechos reservados | Fernanda Salvador Peluquería | Castilla #314 Campana, BA.AS.</div>
+            
+                <div class="small d-flex text-white-50">
+                    <div class="align-items-center px-1"><p>Desarrollado por Jasmin</p></div>
+                    <div class="align-items-center px-1 d-block"><img src="images/mariposa-gris-sf.png" width="23px" alt="Mariposa Monarca"></div>
+                </div>
+            </footer>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

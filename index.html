@@ -1,0 +1,485 @@
+<!--PAGINA INICIO PELUQUERIA-->
+    <!DOCTYPE html>
+    <html lang="es">
+    <Head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jasmin Salvador">
+        <meta name="description" content="Sitio web peluqueria">
+        <meta name="keywords" content="HTML, CSS, JavaScript, React">    
+        <title>Fernanda Salvador Peluqueria</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="images/logo_transparente.png">
+        <!--bootstrap-->  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!--iconos bootstrap-->  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <!--css-->  
+        <link rel="stylesheet" href="css/style.css">
+        <!--tipografia-->  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    </Head>
+    <body>
+        <!-- menu nav -->        
+        <nav class="navbar navbar-expand-md p-2 w-100"> 
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-center justify-content-between px-5" id="menu">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo_transparente.png" width="130" alt="Logo peluqueria">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios-actuales">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://wa.me/5493489680614" target="_blank">Agendar Turno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!--contenedor gral-->
+        <div class="container-gral">
+
+            <!--Hero-Carrusel-->
+            <section class="hero align-items-stretch">
+                <div id="carouselFotos" class="carousel slide w-100 mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!--banner logo-->
+                        <div class="carousel-item active">
+                                <div class="contenedor-carousel mx-auto">
+                                    <img src="images/banner-logo.png" class="d-block w-100 border-top border-4 border-light" alt="Banner peluqueria">
+                                    <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                        </div>
+                        <!--banner rubios-->
+                        <div class="carousel-item">
+                            <div class="contenedor-carousel mx-auto">
+                                <img src="images/banner-rubios.png" class="d-block w-100 border-top border-4 border-light" alt="Banner cabellos rubios">
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>    
+                        </div>
+                        <!--banner reiki-->
+                        <div class="carousel-item">
+                            <div class="contenedor-carousel mx-auto">
+                                <img src="images/banner-reiki.png" class="d-block w-100 border-top border-4 border-light" alt="Banner reiki">
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>    
+                        </div>
+                        <!--banner colorimetria-->
+                        <div class="carousel-item">
+                            <div class="contenedor-carousel mx-auto">
+                                <img src="images/banner-colorimetria.png" class="d-block w-100 border-top border-4 border-light" alt="Banner colorimetria">
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>    
+                        </div>
+                        <!--banner balayage-->
+                        <div class="carousel-item">
+                            <div class="contenedor-carousel mx-auto">
+                                <img src="images/banner-balayage.png" class="d-block w-100 border-top border-4 border-light" alt="Banner balayage">
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>    
+                        </div>
+                        <!-- flechas-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        
+
+            <!-- Servicios peluqueria -->
+            <section id="servicios-actuales"> 
+                <h1 class="titulo-servicios text-center mt-5 p-3">Nuestros servicios</h1>
+                <div class="servicios-actuales d-flex flex-column mx-auto">  
+                    <!--galeria servicios-->
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="servicios">
+                                <h4 class="text-start text-black">PELUQUERÍA</h4>
+                                <hr class="mb-5">
+                            </div>
+                            <!--Servicio 1 --> 
+                            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                                <div class="servicio">
+                                    <img src="images/Balayage.jpeg" class="border border-dark border-1 d-block w-100 rounded-circle" alt="Tecnicas de color">
+                                    <div class="overlay">
+                                        <p>Tecnicas de color</p>
+                                    </div>
+                                    <div>
+                                        <P class="lista-servicios mt-3 mb-4">Babylights | Balayage | Couturing | Mechas | Iluminación | Color</P>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Servicio 2 -->
+                            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                                <div class="servicio">
+                                    <img src="images/oro-liquido.png" class="border border-dark border-1 d-block w-100 rounded-circle" alt="Tratamientos capilares">
+                                    <div class="overlay">
+                                        <p>Tratamientos Capilares</p>
+                                    </div>                                    
+                                    <div>
+                                        <p class="lista-servicios mt-3 mb-4" >Keratina | Botox | Oro liquido | 
+                                        <br> Metodo Curly 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--servicio 3 --> 
+                            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                                <div class="servicio">
+                                    <img src="images/alisado.png" class="border border-dark border-1 d-block w-100 rounded-circle" alt="Alisados">
+                                    <div class="overlay">                                        
+                                        <p>Alisados</p>
+                                    </div>
+                                    <div>
+                                        <p class="lista-servicios mt-3 mb-4">Biomolecular | Plastificado | Suave/Fuerte | Sin formol</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--ESTETICA-->
+                            <div class="servicios">
+                                <h4 class="text-start text-black mt-5">ESTÉTICA</h4>
+                                <hr class="mb-5">
+                            </div>
+                            <!--Servicio 4 --> 
+                            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                                <div class="servicio">
+                                    <img src="images/lifting.jpeg" class="border border-dark border-1 d-block w-100 rounded-circle" alt="Lifting pestañas/Perfilado de cejas">
+                                    <div class="overlay">
+                                        <p>Pestañas & Cejas</p>
+                                    </div>
+                                    <div>
+                                        <P class="lista-servicios mt-3 mb-4">Lifting de pestañas | Perfilado de cejas</P>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Servicio 5 -->
+                            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                                <div class="servicio">
+                                    <img src="images/uñas-3.png" class="border border-dark border-1 d-block w-100 rounded-circle" alt="Manicure">
+                                    <div class="overlay">
+                                        <p>Manicure</p>
+                                    </div>                                    
+                                    <div>
+                                        <p class="lista-servicios mt-3 mb-4" >Esmaltado permanente de uñas 
+                                        <br>
+                                        para manos & pies                 
+                                    </div>
+                                </div>
+                            </div>
+                            <!--servicio 6 --> 
+                            <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                                <div class="servicio">
+                                    <img src="images/reiki.png" class="border border-dark border-1 d-block w-100 rounded-circle" alt="Reiki">
+                                    <div class="overlay">                                        
+                                        <p>Reiki</p>
+                                    </div>
+                                    <div>
+                                        <p class="lista-servicios mt-3 mb-4">Sesiones de Reiki | Sanación </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Boton-->
+                        <div class="boton mt-4">
+                            <a href="https://jassalvador.github.io/webPeluqueria/servicios" target="_blank" rel="noopener noreferrer ">
+                                <button type="button" class="btn btn-dark">
+                                    Conocé nuestros servicios
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-100 my-4">
+            </section>        
+        
+
+            <!--Carrusel inferior / antes y despues-->
+            <section class="section-carrusel">
+
+                <div class="titulo-carrusel text-center col-12">
+                    <h1>Buscás un cambio? 
+                        <br>
+                        Inspirate con estos antes y despues!
+                    </h1>
+                </div>
+
+                <div class="carrusel mx-auto">
+                        
+                    <div class="carrusel-imagenes">
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-1.jpeg" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-2.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-3.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-4.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-5.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-6.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-7.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-8.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-9.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-10.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-11.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-12.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-13.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-14.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-15.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-16.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-17.jpeg" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen"> <!--slide-->
+                            <img src="images/cambios-1.jpeg" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-2.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-3.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-4.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-5.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-6.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-7.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-8.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-9.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-10.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-11.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-12.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-13.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-14.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-15.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-16.png" alt="Imagen antes/despues">
+                        </div>
+
+                        <div class="carrusel-imagen">
+                            <img src="images/cambios-17.jpeg" alt="Imagen antes/despues">
+                        </div>
+                    </div> 
+                </div>    
+            </section>
+
+
+        </div><!--fin container gris-->
+
+
+            <!-- Productos -->
+            <section class="productos d-flex flex-column">
+                <div class="container text-center d-flex flex-wrap justify-content-center align-items-center">
+                
+                    <div class="text-center mx-auto">
+                        <p >
+                            Ya que nuestra prioridad es satisfacer todas sus
+                            <br>
+                            necesidades ponemos a tu disposición la amplia linea
+                            <br>
+                            de productos profesionales Fidelité, que
+                            <br>
+                            destacan en calidad y confianza.
+                            <br>
+                            </p>
+                            <h5 class="my-3">FIDELITÉ PROFESSIONAL HAIR COSMETICS</h5>
+                            <p>
+                            Para que cada uno disfrute de sus bondades
+                            <br>
+                            y de crear tendencias en su propio mundo.
+                            <br>
+                            <br>
+                            Viví la experiencia Fidelité!
+                        </p> 
+                    </div>
+                    <div class="mx-auto">
+                        <img src="images/productos.png" alt="Productos Fidelité">
+                    </div>    
+                </div>
+            </section>
+        
+
+            <!-- info turnos-->
+            <section>
+                <div class="py-5 mb-5 peluqueria d-flex flex-column justify-content-center align-items-center col-12 mx-auto"> 
+                    <h2 class="titulox mb-4 text-center text-black px-4">vení y resaltá tu belleza natural</h2>
+                    <p class="textox text-black text-center bg-white m-5 px-3">Atendemos de martes a sabado de 10 a 12 y de 16 a 19 hrs</p>
+                    <!--Boton-->
+                    <div class="boton">
+                        <a href="https://wa.me/5493489680614" target="_blank" rel="noopener noreferrer ">
+                            <button type="button" class="btn btn-dark">
+                                Agendá tu Turno
+                                <i class="bi bi-whatsapp"></i>
+                            </button>
+                        </a>
+                    </div>    
+                </div>
+            </section>
+
+
+            <!--siguenos-->    
+            <section class="siguenos pt-4 mt-5 bg-black">
+                <div class="container">
+                    <div class="container siguenos-ig d-flex justify-content-evenly align-items-center bg-secondary">
+                        <div class=" align-items-center mx-auto">
+                            <a href="https://www.instagram.com/fernandasalvadorpeluqueria/" target="_blank" rel="noopener noreferrer"> 
+                                <h5 class="lead text-center">
+                                    También podés seguirnos en Instagram y enterarte de todas nuestras promos y novedades antes que nadie!
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="text-center align-items-center mx-auto px-1">
+                            <a href="https://www.instagram.com/fernandasalvadorpeluqueria/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/instagram-icon.png" class="d-block" width="60" alt="logo instagram">
+                            </a>
+                        </div>
+                    </div>              
+                </div>
+            </section>
+
+
+            <!--pie de pagina / footer-->
+            <section>
+                <footer id="footer" class="footer footer-expand-md d-flex flex-column align-items-center justify-content-center bg-black text-white pb-5">
+                    <img class="footer-logo d-block" src="images/logo-negro.jpg" width="70px" alt="Logo de peluqueria">
+                    <p class="px-4 footer-texto text-center">Fernanda Salvador Peluqueria</p>
+                                
+                    <!-- Iconos redes sociales -->
+                    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+                                    
+                        <a href="https://wa.me/5493489680614" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/fernandasalvadorpeluqueria/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="mailto:fernanda-cs@live.cl" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Int.+Castilla+314,+Campana,+Provincia+de+Buenos+Aires,+Argentina/@-34.1622575,-58.9723315,15z/data=!4m13!1m7!3m6!1s0x95bb723581e8712b:0x5301f210738c01a3!2sInt.+Castilla+314,+Campana,+Provincia+de+Buenos+Aires,+Argentina!3b1!8m2!3d-34.1622575!4d-58.9635768!3m4!1s0x95bb723581e8712b:0x5301f210738c01a3!8m2!3d-34.1622575!4d-58.9635768" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-geo-alt"></i>
+                        </a>                           
+                    </div>
+                    
+                    <div class="small p-3 derechos-de-autor text-center text-white-50 mt-5">&#169; 2023 | Todos los derechos reservados | Fernanda Salvador Peluquería | Castilla #314 Campana, BA.AS.</div>
+                
+                    <div class="small d-flex text-white-50">
+                        <div class="align-items-center px-1"><p>Desarrollado por Jasmin</p></div>
+                        <div class="align-items-center px-1 d-block"><img src="images/mariposa-gris-sf.png" width="23px" alt="Mariposa Monarca"></div>
+                    </div>
+                </footer>
+            </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</Html>

@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-gral {
+    background-color: rgb(238, 233, 233);
+}
+
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*titulo servicios*/
+.titulo-servicios {
+    font-size: 50px;
+    font-family: 'Playball', cursive;
+}
+
+/*botones*/
+.boton .btn{
+    background-color: black;
+    border: solid 3px rgb(145, 144, 144); 
+    padding: 12px 16px;
+    text-transform: uppercase;
+    align-items: center;
+    position: relative;
+    margin: 20px 0 40px 0;
+}
+
+.boton .btn:hover {
+    background-color: #eedada ;
+    color: black;
+    border: solid 1px black; 
+}
+
+
+/*menu nav*/
+.navbar {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(white, rgb(145, 144, 144) );
+    z-index: 999;
+}
+
+.nav-link {
+    font-size: 17px;
+}
+
+/*eliminar borde boton menu*/
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+    /*ocultar imagen menu*/
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+
+/* hero carrusel*/
+.hero {
+    background-image: url('../images/photo.jfif');
+    background-repeat: no-repeat;
+    background-position: center ; /*centrar*/
+    background-size: cover; /*reescala automatica*/
+    height: 100%;
+    text-align: center;
+    padding: 4% 0;
+}
+
+.contenedor-carousel {
+    width: 90%;
+}
+
+
+/*header*/
+.banner-pelu {
+    width: 80%;
+}
+
+.texto-banner {
+    width: 80%;
+}
+
+
+/* servicios */
+.servicios-actuales {
+    margin-top: 7vh;
+    width: 70%;
+}
+
+.servicio img {
+    transition: all 0.2s ease-in;
+    
+}
+
+/*overlay imagen */
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* parrafos dentro de overlay */
+.overlay p {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* muestrar texto al poner el cursor*/
+.servicio {
+    position: relative;
+}
+
+/* img + transparente*/
+.servicio:hover img {
+    opacity: 0.2;
+}
+
+/*al pasar el mouse*/
+.servicio:hover .overlay {
+    opacity: 1;
+}
+
+
+/*carrusel inferior antes/despues*/
+.section-carrusel {
+    padding: 20px 0;
+}
+
+.titulo-carrusel {
+    font-size: 30px;
+    font-family: 'Playball', cursive;
+    color: black;
+    margin-top: 3%;
+}
+
+.carrusel {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-imagenes {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 34);
+    padding: 40px 0;
+}
+
+.carrusel-imagenes:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.carrusel-imagen {
+    min-width: 250px;
+    max-width: 250px;
+    height: 230px;
+}
+
+.carrusel-imagen img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(44, 44, 44);
+    display: block;
+}
+
+/*para agrandar la imagen al pasar el cursor*/
+.carrusel-imagen:hover {
+    transform: scale(1.2);
+}
+
+/*animacion slider*/
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 17));
+        transform: translateX(calc(-200px * 17));
+    }
+}
+
+
+/*Productos */
+.productos {
+    width: 100%;
+    margin: 7vw 0;
+}
+
+
+/* info turnos*/
+.peluqueria {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.peluqueria::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/frontis-2.jpeg');
+    opacity: 0.4;
+    background-position: center ; /*centrar*/
+    background-repeat: no-repeat; /*no repetir*/
+    background-attachment: fixed; /*fijar*/
+    background-size: cover; /*reescala automatica*/
+}
+
+.titulox {
+    text-transform: uppercase;
+    font-size: 3em;
+    position: relative;
+    padding: 50px 10px 40px 10px;
+}
+
+.textox {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    position: relative;
+}
+
+
+
+
+/* PAGINA SECUNDARIA / DETALLE-SERVICIOS*/
+
+.servicios-actuales-desc {
+    width: 88%;
+    margin-bottom: 100px;
+}
+
+/*boton descripciones*/
+.texto-descripcion .btn {
+border: solid 1px rgb(145, 144, 144);  
+}
+
+.texto-descripcion .btn:hover {
+    background-color: #eedada ;
+    color: black;
+}
+
+
+
+
+
+
+/*siguenos*/
+.siguenos .container{
+    max-width: 1100px;
+    min-height: 150px;
+    
+}
+
+.siguenos-ig {
+    margin-top: -60px;
+    box-shadow: 4px 4px rgb(207, 129, 146);
+    max-height: 100px;
+}
+
+.siguenos-ig a {
+    text-decoration: none;
+    color: white;
+}
+
+.siguenos-ig a:hover {
+    color: black;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    min-height: 500px;
+}
+
+.footer-texto {
+    font-size: 2.5rem;
+    padding: 20px 0 10px 0;
+    font-family: 'Corinthia', cursive;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid rgb(207, 129, 146);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: rgb(207, 129, 146);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+/*cambiar color al pasar el mouse*/
+.iconos-redes-sociales a:hover {
+    background-color: rgb(207, 129, 146);
+    border: 2px solid white;
+}
+
+/* cambio color icono*/
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
